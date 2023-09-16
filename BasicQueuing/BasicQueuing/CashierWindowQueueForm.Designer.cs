@@ -28,47 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            listView1 = new ListView();
+            btnRefresh = new Button();
+            btnNext = new Button();
+            listCashierQueue = new ListView();
             SuspendLayout();
             // 
-            // button1
+            // btnRefresh
             // 
-            button1.Font = new Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(12, 29);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btnRefresh.Font = new Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnRefresh.Location = new Point(12, 29);
+            btnRefresh.Name = "btnRefresh";
+            btnRefresh.Size = new Size(75, 23);
+            btnRefresh.TabIndex = 0;
+            btnRefresh.Text = "Refresh";
+            btnRefresh.UseVisualStyleBackColor = true;
+            btnRefresh.Click += btnRefresh_Click;
             // 
-            // button2
+            // btnNext
             // 
-            button2.Font = new Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.Location = new Point(12, 58);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 1;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            btnNext.Font = new Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnNext.Location = new Point(12, 58);
+            btnNext.Name = "btnNext";
+            btnNext.Size = new Size(75, 23);
+            btnNext.TabIndex = 1;
+            btnNext.Text = "Next";
+            btnNext.UseVisualStyleBackColor = true;
+            btnNext.Click += btnNext_Click;
             // 
-            // listView1
+            // listCashierQueue
             // 
-            listView1.Location = new Point(107, 29);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(169, 208);
-            listView1.TabIndex = 2;
-            listView1.UseCompatibleStateImageBehavior = false;
+            listCashierQueue.Location = new Point(107, 29);
+            listCashierQueue.Name = "listCashierQueue";
+            listCashierQueue.Size = new Size(169, 208);
+            listCashierQueue.TabIndex = 2;
+            listCashierQueue.UseCompatibleStateImageBehavior = false;
+            listCashierQueue.SelectedIndexChanged += listView1_SelectedIndexChanged;
             // 
             // CashierWindowQueueForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.IndianRed;
             ClientSize = new Size(288, 249);
-            Controls.Add(listView1);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(listCashierQueue);
+            Controls.Add(btnNext);
+            Controls.Add(btnRefresh);
             Name = "CashierWindowQueueForm";
             Text = "CashierWindowQueueForm";
             ResumeLayout(false);
@@ -76,8 +80,8 @@
 
         #endregion
 
-        private Button button1;
-        private Button button2;
-        private ListView listView1;
+        private Button btnRefresh;
+        private Button btnNext;
+        private ListView listCashierQueue;
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QueuingForm;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,30 @@ namespace BasicQueuing
         public CashierWindowQueueForm()
         {
             InitializeComponent();
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            DisplayCashierQueue(CashierClass.CashierQueue);
+        }
+
+        public void DisplayCashierQueue(IEnumerable CashierList)
+        {
+            listCashierQueue.Items.Clear();
+            foreach (object obj in CashierList)
+            {
+                listCashierQueue.Items.Add(obj.ToString());
+            }
         }
     }
 }

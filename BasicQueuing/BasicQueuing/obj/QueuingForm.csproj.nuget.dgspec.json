@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Almo.176457\\source\\repos\\BasicQueuing\\BasicQueuing\\QueuingForm.csproj": {}
+    "H:\\hihi\\BasicQueuing\\BasicQueuing\\QueuingForm.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Almo.176457\\source\\repos\\BasicQueuing\\BasicQueuing\\QueuingForm.csproj": {
+    "H:\\hihi\\BasicQueuing\\BasicQueuing\\QueuingForm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Almo.176457\\source\\repos\\BasicQueuing\\BasicQueuing\\QueuingForm.csproj",
+        "projectUniqueName": "H:\\hihi\\BasicQueuing\\BasicQueuing\\QueuingForm.csproj",
         "projectName": "QueuingForm",
-        "projectPath": "C:\\Users\\Almo.176457\\source\\repos\\BasicQueuing\\BasicQueuing\\QueuingForm.csproj",
+        "projectPath": "H:\\hihi\\BasicQueuing\\BasicQueuing\\QueuingForm.csproj",
         "packagesPath": "C:\\Users\\Almo.176457\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Almo.176457\\source\\repos\\BasicQueuing\\BasicQueuing\\obj\\",
+        "outputPath": "H:\\hihi\\BasicQueuing\\BasicQueuing\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

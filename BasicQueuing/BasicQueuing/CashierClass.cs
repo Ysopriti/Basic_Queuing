@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace QueuingForm
+﻿namespace QueuingForm
 {
-    
+
     internal class CashierClass
     {
         private int x;
@@ -17,8 +11,13 @@ namespace QueuingForm
         {
             x = 10000;
             CashierQueue = new Queue<string>();
+            CashierQueue = new Queue<string>();
         }
-
-
+        public string CashierGeneratedNumber(string CashierNumber)
+        {
+            x++;
+            CashierNumber = CashierNumber + x.ToString();
+            return CashierNumber;
+        }
     }
 }
